@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi-uv-app-krushna-jagdale
+    ports:
+      - "8000:8000"
+    restart:  always
+
